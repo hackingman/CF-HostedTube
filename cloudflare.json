@@ -1,0 +1,44 @@
+{
+    
+    "name": "CF HostedTube",
+    "description": "Simple app that places webcam ads and some other features to my hosted tube sites",
+    "version": "0.1",
+    "category": "advertising",
+    "main": "public/javascripts/hostedtube.js",
+    "config":{
+        "details":{
+            "Language": "English",
+            "Price": "Free",
+            "Restrictions": "None",
+            "TOS":"http://www.cloudflare.com/terms",
+            "has_js": true
+        }, 
+        "assets":{
+            "logos" : {
+                "200px": "./public/images/logo-200.png",
+                "132px": "./public/images/logo-132.png"
+            },
+            "detail_page" : [
+                "./public/images/example.png"
+            ]
+        },
+        "interface": [
+            {
+                "type": "select",
+                "id": "type",
+                "name": "target",
+                "description": "Choose your website audience",
+                "options": [
+                    {
+                        "label": "Straight!",
+                        "value": "straight"
+                    },
+                    {
+                        "label": "Gay",
+                        "value": "gay"
+                    }
+                ]
+            }
+        ]
+    }
+}
